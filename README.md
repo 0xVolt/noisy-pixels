@@ -51,16 +51,20 @@ Step 3, interpolating between the dot products produced from step 2.
 
 This repository will start from the bare bones of randomness and noise and will build up to the simulation of Perlin noise in 2D, as we have discussed above. All the scripts/sketches will be annotated and descriptive so feel free to learn or take inspiration from them.
 
-For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) ^[3]^ from the VSCode marketplace. 
+You can run any sketch in this repository with the following steps:
 
 1. Clone this repository with 
    ```bash
    git clone https://github.com/0xVolt/noisy-pixels.git
    ```
 
-2. 
+2. For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) ^[3]^ from the VSCode marketplace. Alternatively you could use the `p5.js` web editor but I find it better to have a local development environment.  
+
+3. The `p5.vscode` extension downloads the live server extension too meaning to run the sketch, you would only need to click the live server button in the bottom-right of your vscode window ^[4]^.
+   ![](./assets/4-vscode-live-server-statusbar-3.jpg)
 
 ## 3. References
 [1] [The Official p5.js Website](https://p5js.org/)
 [2] [Perlin Noise Wikipedia](https://en.wikipedia.org/wiki/Perlin_noise)
 [3] [p5.vscode Extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode)
+[4] [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
