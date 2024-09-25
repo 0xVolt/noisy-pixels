@@ -18,8 +18,9 @@ I've developed this project using a JavaScript library named `p5.js`. Renowned f
 
 ### 1.2. Random vs. Noise
 
+When we speak of algorithmic systems, there is an important distinction to make between noise and randomness. Randomness usually refers to the generation of unpredictable values that do not have a discernible pattern to them. This generation typically leads to an independent value every time. If you have ever used a random number generator, you will know that sometimes you can have sharp changes in the values generated; it's not really smooth. That's where noise comes in, when you want a smoother, varying pseudo-random value that does not have as sudden a change as randomness. 
 
 
 ## 2. References
-1. https://p5js.org/
+1. [The Official p5.js Website](https://p5js.org/)
 2. 
