@@ -28,7 +28,7 @@ When we speak of algorithmic systems, there is an important distinction to make 
 
 ### 1.3. Perlin Noise
 
-Perlin Noise, named after Ken Perlin, is one such pseudo-random function that produces values that follow a gradient. It was developed in 1983 to create natural-looking textures and animations and gained fame when used in TRON (1982) for generating organic, flowing visuals. 
+Perlin Noise, named after Ken Perlin, is one such pseudo-random function that produces values that follow a gradient. It was developed in 1983 to create natural-looking textures and animations and gained fame when used in TRON (1982) for procedurally generating organic, flowing textures for objects. Before then, animators did it all by hand! Perlin was awarded an Oscar for Technical Achievement in 1997, for creating the algorithm that produced never-before seen computer graphics. 
 
 > My ability to fawn over anything *Cyberpunk* never ceases to amaze me so if you were wondering what the inspiration for this project was, there you have it.
 
