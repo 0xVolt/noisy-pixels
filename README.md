@@ -29,7 +29,7 @@ When we speak of algorithmic systems, there is an important distinction to make 
 Note:
 When you call `random(2, 3)`, this will give you a random float number between 2 and 3. `random(10)` gives you a random number between 0 and 10. However, you will notice that these values are discernable and independent from one another. If you call `noise(10)` multiple times over, you will get the same number (in the range of 0 to 1) over and over again. `noise(10.001)` will give you a number that is just slightly different from the one before.
 
-Let's simplify and compare `random(1)` and `noise(1)`. With the `random()` function, you have an equal probability of getting any float number between 0 and 1. This means that the distribution is uniform. This is not the case with the `noise()` function, where the distribution is a bell shape that tends to have it's peak around the mean. Keep in mind, this is only an approximation that makes it easier to think about these functions.
+Let's simplify and compare `random(1)` and `noise(1)`. With the `random()` function, you have an equal probability of getting any float number between 0 and 1. This means that the distribution is uniform. This is not the case with the `noise()` function, where the distribution is a bell shape (normal distribution) that tends to have it's peak around the mean. Keep in mind, this is only an approximation that makes it easier to think about these functions.
 
 Here's what the noise values look like when called for the same argument. Notice how the noise value marginally changes for a slight change in the input. 
 
@@ -39,7 +39,7 @@ Here's what the random values look like for the same argument.
 
 ![](./assets/random-values-console.png)
 
-> It may help to think about the argument to the `noise()` function as a seed value that represents the value on the x-axis that corresponds to a noise value on the distribution's bell curve. 
+> It may help to think about the argument to the `noise()` function as a seed value that represents the value on the x-axis that corresponds to a noise value on the distribution's bell curve. The runtime creates a new distribution for the noise values every time you refresh the page. 
 
 ### 1.3. Perlin Noise
 
