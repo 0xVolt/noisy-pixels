@@ -43,6 +43,9 @@ function drawCircleWithNoisyX() {
   var x = map(noise(xOffset), 0, 1, -width, width);
 
   // Add to the offset every time the function is called
+  // Since this value determines how big of a jump you take to pick a number from the normal distribution, you can almost think of it as the speed of the circle
+  // If you were to increase this number to a more significant value, you would almost be taking huge leaps along the distribution to get a value, thereby making it's movement similar to the random simulation
+  // You would be so far ahead in the perlin noise space that the meaning of the current value depending on the neighbour values, is lost
   xOffset += 0.01;
 
   // Draw the circle
