@@ -68,7 +68,7 @@ This repository will start from the bare bones of randomness and noise and will 
 
 You can run any sketch in this repository with the following steps:
 
-1. Clone this repository with 
+1. Clone this repository with, 
    ```bash
    git clone https://github.com/0xVolt/noisy-pixels.git
    ```
