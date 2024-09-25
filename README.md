@@ -26,6 +26,13 @@ I've developed this project using a JavaScript library named `p5.js`. Renowned f
 
 When we speak of algorithmic systems, there is an important distinction to make between noise and randomness. Randomness usually refers to the generation of unpredictable values that do not have a discernible pattern to them. This generation typically leads to an independent value every time. If you have ever used a random number generator, you will know that sometimes you can have sharp changes in the values generated; it's not really smooth. That's where noise comes in, when you want a smoother and more gradual, varying pseudo-random value that does not have as sudden a change as randomness. This difference is key when we try to simulate organic or natural systems and it can lead to really cool results! 
 
+Note:
+When you call `random(2, 3)`, this will give you a random float number between 2 and 3. `random(10)` gives you a random number between 0 and 10. However, you will notice that these values are discernable and independent from one another. If you call `noise(10)` multiple times over, you will get the same number (in the range of 0 to 1) over and over again. `noise(10.001)` will give you a number that is just slightly different from the one before.
+
+Let's simplify and compare `random(1)` and `noise(1)`. With the `random()` function, you have an equal probability of getting any float number between 0 and 1. This means that the distribution is uniform. This is not the case with the `noise()` function, where the distribution is a bell shape that tends to have it's peak around the mean. Keep in mind, this is only an approximation that makes it easier to think about these functions.
+
+It may help to think about the argument to the `noise()` function as a seed value that represents the value on the x-axis that corresponds to a noise value on the distribution's bell curve. 
+
 ### 1.3. Perlin Noise
 
 Perlin Noise, named after Ken Perlin, is one such pseudo-random function that produces values that follow a gradient. It was developed in 1983 to create natural-looking textures and animations and gained fame when used in TRON (1982) for procedurally generating organic, flowing textures for objects. Before then, animators did it all by hand! Perlin was awarded an Oscar for Technical Achievement in 1997, for creating the algorithm that produced never-before seen computer graphics. 
