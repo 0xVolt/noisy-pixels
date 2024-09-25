@@ -6,4 +6,9 @@ function setup() {
 
 function draw() {
   background(51);
+  
+  translate(width / 2, height / 2);
+  noFill();
+  stroke(255);
+  ellipse(0, 0, 25, 25);
 }
