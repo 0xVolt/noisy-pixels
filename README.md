@@ -20,7 +20,7 @@ This repository is primarily intended to help me remember how to program an algo
 
 ### 1.1. `p5.js`
 
-I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of. If this is your first time hearing about `p5.js`, I highly urge you to [check out what it has to offer](https://p5js.org/) <sup>[1]</sup>. 
+I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of. If this is your first time hearing about `p5.js`, I highly urge you to [check out what it has to offer](https://p5js.org/)<sup>[1]</sup>. 
 
 ### 1.2. Random vs. Noise
 
@@ -34,7 +34,7 @@ Perlin Noise, named after Ken Perlin, is one such pseudo-random function that pr
 
 This gradient noise function is most commonly applied to 2D and 3D graphics but can be extended to any number of dimensions. For the sake of this simulation, let's leave it at the second dimension. 
 
-The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values <sup>[2]</sup>.
+The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values<sup>[2]</sup>.
 
 These steps are better represented with these images from Wikipedia.
 
@@ -58,9 +58,9 @@ You can run any sketch in this repository with the following steps:
    git clone https://github.com/0xVolt/noisy-pixels.git
    ```
 
-2. For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) <sup>[3]</sup> from the VSCode marketplace. Alternatively you could use the `p5.js` web editor but I find it better to have a local development environment.  
+2. For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode)<sup>[3]</sup> from the VSCode marketplace. Alternatively you could use the `p5.js` web editor but I find it better to have a local development environment.  
 
-3. The `p5.vscode` extension downloads the live server extension too meaning to run the sketch, you would only need to click the live server button in the bottom-right of your vscode window <sup>[4]</sup>.
+3. The `p5.vscode` extension downloads the live server extension too meaning to run the sketch, you would only need to click the live server button in the bottom-right of your vscode window<sup>[4]</sup>.
    ![](./assets/4-vscode-live-server-statusbar-3.jpg)
 
 ## 3. References
