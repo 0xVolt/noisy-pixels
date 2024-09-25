@@ -1,5 +1,7 @@
 # Visualizing Perlin Noise in 2D Pixel Space
 
+---
+
 ## 0. Table of Contents
 - [Visualizing Perlin Noise in 2D Pixel Space](#visualizing-perlin-noise-in-2d-pixel-space)
   - [0. Table of Contents](#0-table-of-contents)
@@ -9,13 +11,15 @@
     - [1.3. Perlin Noise](#13-perlin-noise)
   - [2. References](#2-references)
 
+---
+
 ## 1. Introduction
 
 This repository is primarily intended to help me remember how to program an algorithmic system and, hopefully, to pique people's interest in the beauty of creative coding and generative art. All of the simulations and graphics I create have one thing in common. Noise. Perlin noise to be precise. Every line of code uncovers the inherent beauty of pseudo-random numbers, and I can only hope to do it justice by visualizing Perlin noise in 2D space.
 
 ### 1.1. `p5.js`
 
-I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of. If this is your first time hearing about `p5.js`, I highly urge you to [check out what it has to offer](https://p5js.org/)^1^. 
+I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of. If this is your first time hearing about `p5.js`, I highly urge you to [check out what it has to offer](https://p5js.org/) ^[1]^. 
 
 ### 1.2. Random vs. Noise
 
@@ -29,6 +33,8 @@ Perlin Noise, named after Ken Perlin, is one such pseudo-random function that pr
 
 This gradient noise function is most commonly applied to 2D and 3D graphics but can be extended to any number of dimensions. For the sake of this simulation, let's leave it at the second dimension. 
 
+The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values ^[2]^.
+
 ## 2. References
-1. [The Official p5.js Website](https://p5js.org/)
-2. 
+[1] [The Official p5.js Website](https://p5js.org/)
+[2] [Perlin Noise Wikipedia](https://en.wikipedia.org/wiki/Perlin_noise) 
