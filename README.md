@@ -10,12 +10,14 @@
 
 ## Introduction
 
-This repository aims to primarily help me remember how to program an algorithmic system and hopefully pique the interest of anyone that's stumbled on this repository. 
+This repository is primarily intended to help me remember how to program an algorithmic system and, hopefully, to pique people's interest in the beauty of creative coding and generative art. All of the simulations and graphics I create have one thing in common. Noise. Perlin noise to be precise. Every line of code uncovers the inherent beauty of pseudo-random numbers, and I can only hope to do it justice by visualizing Perlin noise in 2D space.
 
 ### `p5.js`
 
-To start things off, I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of.
+I've developed this project using a JavaScript library named `p5.js`. Renowned for it's open-source and versatile approach to developing interactive graphics, `p5.js` is perfect for visualizing algorithmic systems. Over the years, this library has fostered an amazing and supportive community of creative coding enthusiasts that I'm proud to be a part of.
 
 ### Random vs. Noise
+
+
 
 ## References
