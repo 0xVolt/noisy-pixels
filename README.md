@@ -31,7 +31,15 @@ When you call `random(2, 3)`, this will give you a random float number between 2
 
 Let's simplify and compare `random(1)` and `noise(1)`. With the `random()` function, you have an equal probability of getting any float number between 0 and 1. This means that the distribution is uniform. This is not the case with the `noise()` function, where the distribution is a bell shape that tends to have it's peak around the mean. Keep in mind, this is only an approximation that makes it easier to think about these functions.
 
-It may help to think about the argument to the `noise()` function as a seed value that represents the value on the x-axis that corresponds to a noise value on the distribution's bell curve. 
+![](./assets/noise-values-console.png)
+
+Here's what the noise values look like when called for the same argument. Notice how the noise value marginally changes for a slight change in the input. 
+
+![](./assets/random-values-console.png)
+
+Here's what the random values look like for the same argument.
+
+> It may help to think about the argument to the `noise()` function as a seed value that represents the value on the x-axis that corresponds to a noise value on the distribution's bell curve. 
 
 ### 1.3. Perlin Noise
 
