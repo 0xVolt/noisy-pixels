@@ -9,7 +9,8 @@
     - [1.1. `p5.js`](#11-p5js)
     - [1.2. Random vs. Noise](#12-random-vs-noise)
     - [1.3. Perlin Noise](#13-perlin-noise)
-  - [2. References](#2-references)
+  - [2. Following Along](#2-following-along)
+  - [3. References](#3-references)
 
 ---
 
@@ -35,6 +36,31 @@ This gradient noise function is most commonly applied to 2D and 3D graphics but 
 
 The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values ^[2]^.
 
-## 2. References
+These steps are better represented with these images from Wikipedia.
+
+Step 1, creating a grid of random vectors that have a gradient to them.
+![](./assets/1-PerlinNoiseGradientGrid.svg.png)
+
+Step 2, calculating the dot product between the vectors and the nearest grid node gradient value.
+![](./assets/2-PerlinNoiseDotProducts.svg.png)
+
+Step 3, interpolating between the dot products produced from step 2.
+![](./assets/3-PerlinNoiseInterpolated.svg.png)
+
+## 2. Following Along
+
+This repository will start from the bare bones of randomness and noise and will build up to the simulation of Perlin noise in 2D, as we have discussed above. All the scripts/sketches will be annotated and descriptive so feel free to learn or take inspiration from them.
+
+For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) ^[3]^ from the VSCode marketplace. 
+
+1. Clone this repository with 
+   ```bash
+   git clone https://github.com/0xVolt/noisy-pixels.git
+   ```
+
+2. 
+
+## 3. References
 [1] [The Official p5.js Website](https://p5js.org/)
-[2] [Perlin Noise Wikipedia](https://en.wikipedia.org/wiki/Perlin_noise) 
+[2] [Perlin Noise Wikipedia](https://en.wikipedia.org/wiki/Perlin_noise)
+[3] [p5.vscode Extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode)
