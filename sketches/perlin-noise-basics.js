@@ -1,7 +1,9 @@
+// This is a sketch to explore noise and subsequently Perlin noise
+
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 }
 
 function draw() {
-  background(220);
+  background(51);
 }
