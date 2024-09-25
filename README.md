@@ -34,7 +34,7 @@ Perlin Noise, named after Ken Perlin, is one such pseudo-random function that pr
 
 This gradient noise function is most commonly applied to 2D and 3D graphics but can be extended to any number of dimensions. For the sake of this simulation, let's leave it at the second dimension. 
 
-The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values ^[2]^.
+The algorithm consists of three steps, regardless of the dimension of the input space: defining a grid of random gradient vectors, computing the dot product between the gradient vectors and their offsets and interpolating between these values <sup>[2]</sup>.
 
 These steps are better represented with these images from Wikipedia.
 
@@ -58,9 +58,9 @@ You can run any sketch in this repository with the following steps:
    git clone https://github.com/0xVolt/noisy-pixels.git
    ```
 
-2. For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) ^[3]^ from the VSCode marketplace. Alternatively you could use the `p5.js` web editor but I find it better to have a local development environment.  
+2. For people new to `p5.js`, the easiest way to get it set-up in VSCode is to download [this extension](https://marketplace.visualstudio.com/items?itemName=samplavigne.p5-vscode) <sup>[3]</sup> from the VSCode marketplace. Alternatively you could use the `p5.js` web editor but I find it better to have a local development environment.  
 
-3. The `p5.vscode` extension downloads the live server extension too meaning to run the sketch, you would only need to click the live server button in the bottom-right of your vscode window ^[4]^.
+3. The `p5.vscode` extension downloads the live server extension too meaning to run the sketch, you would only need to click the live server button in the bottom-right of your vscode window <sup>[4]</sup>.
    ![](./assets/4-vscode-live-server-statusbar-3.jpg)
 
 ## 3. References
