@@ -3,23 +3,15 @@
 var xOffset = 0;
 
 function setup() {
-  createCanvas(600, 600);
-}
-
-
-function drawCircleWithNoisyX() {
-  translate(width / 2, height / 2);
-
-  var x = map(noise(xOffset), 0, 1, -width, width);
-
-  xOffset += 0.01;
-
-  // Draw the circle
-  ellipse(x, 0, 25, 25);
-  console.log(x);
+  createCanvas(400, 400);
 }
 
 function draw() {
   background(55);
   
+  var x = map(noise(xOffset), 0, 1, 0, width);
+
+  xOffset += 0.01;
+
+  ellipse(x, 200, 24, 24);
 }
