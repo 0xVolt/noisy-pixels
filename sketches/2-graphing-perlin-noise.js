@@ -12,7 +12,7 @@ var noiseOffset2 = 1000;
 function drawCircleNoisy() {
   // Using the two offsets from the same noise space to generate noisy x and y values
   var x = map(noise(noiseOffset1), 0, 1, 0, width);
-  var y = map(noise(noiseOffset2), 0, 1, 0, height);
+  var y = map(noise(noiseOffset2), 0, 1, 0, height / 2);
 
   noiseOffset1 += 0.01;
   noiseOffset2 += 0.01;
@@ -24,7 +24,7 @@ function drawCircleNoisy() {
 function plotRandomPoints() {
   for (var i = 0; i < width; ++i) {
     stroke(255);
-    point(i, random(-height, height));
+    point(i, random(-height / 2, height / 2));
   }
 
 }
@@ -38,7 +38,7 @@ function shapeRandomPoints() {
   beginShape();
   for (var i = 0; i < width; ++i) {
     stroke(255);
-    vertex(i, random(-height, height));
+    vertex(i, random(-height / 2, height / 2));
   }
   endShape();
 }
@@ -54,7 +54,7 @@ function shapeNoisyPoints() {
     stroke(255);
     // Calculate the y value with noise
     // Map it to go from -height to height since we translated y0 to the center of the canvas
-    var y = map(noise(noiseOffset), 0, 1, -height, height);
+    var y = map(noise(noiseOffset), 0, 1, -height / 2, height / 2);
 
     vertex(x, y);
 
@@ -66,6 +66,8 @@ function shapeNoisyPoints() {
 
 function draw() {
   background(55);
+  // This would require us to have an upper bound that is height / 2 
+  // Since height is the entire height of the canvas, if we move the y = 0 point to the center of the screen, half of the canvas would be above the origin and the other below
   translate(0, height / 2);
   
   // drawCircleNoisy();
