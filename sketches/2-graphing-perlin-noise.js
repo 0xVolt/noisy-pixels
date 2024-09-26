@@ -20,7 +20,6 @@ function drawCircleNoisy() {
   ellipse(x, y, 24, 24);
 }
 
-
 // Function to plot random points across the canvas
 function plotRandomPoints() {
   for (var i = 0; i < width; ++i) {
@@ -49,7 +48,6 @@ function draw() {
   translate(0, height / 2);
   
   // drawCircleNoisy();
-
   // plotRandomPoints();
   shapeRandomPoints();
 
