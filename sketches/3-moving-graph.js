@@ -6,7 +6,7 @@ var increment = 0.01;
 var start = 0;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(1200, 600);
 }
 
 function draw() {
