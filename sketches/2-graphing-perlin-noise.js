@@ -15,7 +15,8 @@ function draw() {
   var x = map(noise(noiseOffset1), 0, 1, 0, width);
   var y = map(noise(noiseOffset2), 0, 1, 0, height);
 
-  xOffset += 0.01;
+  noiseOffset1 += 0.01;
+  noiseOffset2 += 0.01;
 
-  ellipse(x, 200, 24, 24);
+  ellipse(x, y, 24, 24);
 }
