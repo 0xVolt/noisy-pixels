@@ -20,21 +20,39 @@ function drawCircleNoisy() {
   ellipse(x, y, 24, 24);
 }
 
-function graphNoise() {
+
+// Function to plot random points across the canvas
+function plotRandomPoints() {
   for (var i = 0; i < width; ++i) {
     stroke(255);
     point(i, random(-height, height));
   }
 
-  // Stop the draw() function from looping every frame
-  noLoop();
+}
+
+// Building on the above function to plot random points
+// If we replace the points with vertices, we can connect these points to reveal a plot
+function shapeRandomPoints() {
+  stroke(255);
+  noFill();
+
+  beginShape();
+  for (var i = 0; i < width; ++i) {
+    stroke(255);
+    vertex(i, random(-height, height));
+  }
+  endShape();
 }
 
 function draw() {
   background(55);
+  translate(0, height / 2);
   
   // drawCircleNoisy();
 
-  translate(0, height / 2);
-  graphNoise();
+  // plotRandomPoints();
+  shapeRandomPoints();
+
+  // Stop the draw() function from looping every frame
+  noLoop();
 }
