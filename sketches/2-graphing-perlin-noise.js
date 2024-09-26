@@ -1,7 +1,7 @@
 // This sketch intends to develop further on simply moving a circle along one axis with noise to graphing noise in two dimensions
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
 }
 
 // We use 2 noise offset values to keep the perlin noise space the same but take two different values from it
@@ -21,7 +21,10 @@ function drawCircleNoisy() {
 }
 
 function graphNoise() {
-
+  for (var i = 0; i < width; ++i) {
+    stroke(255);
+    point(i, 0);
+  }
 }
 
 function draw() {
@@ -29,5 +32,6 @@ function draw() {
   
   // drawCircleNoisy();
 
+  translate(0, height / 2);
   graphNoise();
 }
