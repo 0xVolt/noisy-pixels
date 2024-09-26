@@ -29,7 +29,7 @@ function plotRandomPoints() {
 
 }
 
-// Building on the above function to plot random points
+// Building on the function above to plot random points
 // If we replace the points with vertices, we can connect these points to reveal a plot
 function shapeRandomPoints() {
   stroke(255);
