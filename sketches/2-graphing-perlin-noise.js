@@ -23,8 +23,11 @@ function drawCircleNoisy() {
 function graphNoise() {
   for (var i = 0; i < width; ++i) {
     stroke(255);
-    point(i, 0);
+    point(i, random(-height, height));
   }
+
+  // Stop the draw() function from looping every frame
+  noLoop();
 }
 
 function draw() {
