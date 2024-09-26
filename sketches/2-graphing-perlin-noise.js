@@ -59,7 +59,7 @@ function shapeNoisyPoints() {
     vertex(x, y);
 
     // Increment the noiseOffset value for the next vertex
-    noiseOffset += 0.01;
+    noiseOffset += 0.03;
   }
   endShape();
 }
