@@ -20,8 +20,14 @@ function drawCircleNoisy() {
   ellipse(x, y, 24, 24);
 }
 
+function graphNoise() {
+
+}
+
 function draw() {
   background(55);
   
   // drawCircleNoisy();
+
+  graphNoise();
 }
