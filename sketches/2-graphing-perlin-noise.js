@@ -43,13 +43,35 @@ function shapeRandomPoints() {
   endShape();
 }
 
+// Implementing the same logic as before to create a noise distribution and increment the noise value every time we create a vertex
+var noiseOffset = 0;
+function shapeNoisyPoints() {
+  stroke(255);
+  noFill();
+
+  beginShape();
+  for (var x = 0; x < width; ++x) {
+    stroke(255);
+    // Calculate the y value with noise
+    // Map it to go from -height to height since we translated y0 to the center of the canvas
+    var y = map(noise(noiseOffset), 0, 1, -height, height);
+
+    vertex(x, y);
+
+    // Increment the noiseOffset value for the next vertex
+    noiseOffset += 0.01;
+  }
+  endShape();
+}
+
 function draw() {
   background(55);
   translate(0, height / 2);
   
   // drawCircleNoisy();
   // plotRandomPoints();
-  shapeRandomPoints();
+  // shapeRandomPoints();
+  shapeNoisyPoints();
 
   // Stop the draw() function from looping every frame
   noLoop();
