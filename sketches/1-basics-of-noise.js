@@ -8,6 +8,7 @@ var xOffset = 0;
 function setup() {
   // Setup the size of the canvas
   createCanvas(600, 600);
+  frameRate(5);
 }
 
 function drawCircleWithRandomX() {
@@ -62,4 +63,5 @@ function draw() {
 
   // This is the smooth random movement we were looking for
   drawCircleWithNoisyX();
+  // drawCircleWithRandomX();
 }
