@@ -6,7 +6,7 @@ var increment = 0.01;
 
 function setup() {
   createCanvas(600, 600);
-  frameRate(5);
+  // frameRate();
 
   // To avoid high-density pixel displays from clumping pixels together
   pixelDensity(1);
@@ -35,6 +35,4 @@ function draw() {
     noiseX += increment;
   }
   updatePixels();
-
-  noLoop();
 }

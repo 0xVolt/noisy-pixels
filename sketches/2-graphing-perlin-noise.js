@@ -24,6 +24,7 @@ function drawCircleNoisy() {
 function plotRandomPoints() {
   for (var i = 0; i < width; ++i) {
     stroke(255);
+    strokeWeight(8);
     point(i, random(-height / 2, height / 2));
   }
 
@@ -70,11 +71,11 @@ function draw() {
   // Since height is the entire height of the canvas, if we move the y = 0 point to the center of the screen, half of the canvas would be above the origin and the other below
   translate(0, height / 2);
   
-  drawCircleNoisy();
+  // drawCircleNoisy();
   // plotRandomPoints();
   // shapeRandomPoints();
-  // shapeNoisyPoints();
+  shapeNoisyPoints();
 
   // Stop the draw() function from looping every frame
-  // noLoop();
+  noLoop();
 }

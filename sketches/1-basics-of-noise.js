@@ -8,7 +8,7 @@ var xOffset = 0;
 function setup() {
   // Setup the size of the canvas
   createCanvas(600, 600);
-  frameRate(5);
+  frameRate(15);
 }
 
 function drawCircleWithRandomX() {
