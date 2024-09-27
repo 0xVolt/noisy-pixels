@@ -12,18 +12,11 @@ function setup() {
 function draw() {
   // Initializing the p5.js pixel array to work with the pixels directly
   loadPixels();
-
   background(0);
-  stroke(255);
 
-  noFill();
-  beginShape();
   for (var x = 0; x < width; ++x) {
     for (var y = 0; y < height; ++y) {
-
+      
     }
   }
-  endShape();
-
-  
 }
