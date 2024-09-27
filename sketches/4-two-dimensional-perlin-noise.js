@@ -7,6 +7,9 @@ var increment = 0.01;
 function setup() {
   createCanvas(400, 400);
   frameRate(5);
+
+  // To avoid high-density pixel displays from clumping pixels together
+  pixelDensity(1);
 }
 
 function draw() {
@@ -16,7 +19,14 @@ function draw() {
 
   for (var x = 0; x < width; ++x) {
     for (var y = 0; y < height; ++y) {
+      var index = (x + y * width) * 4;
       
+      // Change pixel values to R, G, B and alpha
+      pixels[index] = 255;
+      pixels[index + 1] = 0;
+      pixels[index + 2] = 0;
+      pixels[index + 3] = 255;
     }
   }
+  updatePixels();
 }
