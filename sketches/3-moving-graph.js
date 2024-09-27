@@ -7,6 +7,7 @@ var start = 0;
 
 function setup() {
   createCanvas(1200, 600);
+  frameRate(5);
 }
 
 function draw() {
