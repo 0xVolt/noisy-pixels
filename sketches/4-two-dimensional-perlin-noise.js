@@ -5,7 +5,7 @@
 var increment = 0.01;
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(600, 600);
   frameRate(5);
 
   // To avoid high-density pixel displays from clumping pixels together
@@ -15,20 +15,24 @@ function setup() {
 function draw() {
   // Initializing the p5.js pixel array to work with the pixels directly
   loadPixels();
-  background(0);
 
+  var noiseX = 0;
   for (var x = 0; x < width; ++x) {
+    var noiseY = 0;
     for (var y = 0; y < height; ++y) {
       var index = (x + y * width) * 4;
       
-      var r = random(255); 
+      var r = map(noise(noiseX, noiseY), 0, 1, 0, 255); 
       
       // Change pixel values to R, G, B and alpha
       pixels[index] = r;
       pixels[index + 1] = r;
       pixels[index + 2] = r;
       pixels[index + 3] = 255;
+
+      noiseY += increment;
     }
+    noiseX += increment;
   }
   updatePixels();
 
