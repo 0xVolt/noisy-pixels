@@ -31,4 +31,6 @@ function draw() {
     }
   }
   updatePixels();
+
+  noLoop();
 }
