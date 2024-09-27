@@ -21,10 +21,12 @@ function draw() {
     for (var y = 0; y < height; ++y) {
       var index = (x + y * width) * 4;
       
+      var r = random(255); 
+      
       // Change pixel values to R, G, B and alpha
-      pixels[index] = 255;
-      pixels[index + 1] = 0;
-      pixels[index + 2] = 0;
+      pixels[index] = r;
+      pixels[index + 1] = r;
+      pixels[index + 2] = r;
       pixels[index + 3] = 255;
     }
   }
