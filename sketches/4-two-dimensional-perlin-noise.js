@@ -5,7 +5,7 @@
 var increment = 0.01;
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   // frameRate();
 
   // To avoid high-density pixel displays from clumping pixels together
